@@ -1,0 +1,144 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Whole Page Edits */
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Side Formatting */
+.left-side-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    background-image: url(./images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-start;
+
+    padding: 25px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    color: white;
+
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+#logo-text {
+    width: 134px;
+    margin: 0;
+}
+
+.welcome-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+
+    color: white;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 140px;
+}
+
+#welcome-head {
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#welcome-text {
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Right side fills remaining space */
+.right-side-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* center card horizontally */
+    align-items: center;     /* center card vertically */
+    background-color: #f0f2f5; /* light neutral background */
+}
+
+/* Card layout */
+.login-card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Toggle buttons */
+.form-toggle {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 50px; /* round edges */
+    transition: background-color 0.3s;
+}
+
+.toggle-btn.active {
+    background-color: #d3d3d3; /* gray highlight for selected */
+}
+
+/* Form content */
+.form-content input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.form-content button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-content button:hover {
+    background-color: #0056b3;
+}
+
+
